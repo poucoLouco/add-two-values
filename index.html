@@ -13,11 +13,9 @@
       rel="stylesheet"
     />
   </head>
-
+ 
   <body>
-    <div
-      class="container p-3 mb-2 bg-secondary text-white my-5 rounded-3 h-25 w-25"
-    >
+    <div class="container p-3 mb-2 bg-secondary text-white my-5 rounded-3 h-25 w-25">
       <h3>Addition form</h3>
       <label for="num1" class="form-label">Enter Number 1:</label>
       <input
@@ -42,14 +40,14 @@
       <label for="total">Result is:</label>
       <input
         type="text"
-        class="form-control"
+        class="form-control "
         name=""
         id="total"
         aria-describedby="helpId"
         placeholder=""
         readonly
       />
-      <button type="button" class="btn btn-info my-3" onclick="funAdd()">
+      <button type="button" class="btn btn-info my-3 " onclick="funAdd()">
         SUM
       </button>
     </div>
@@ -58,8 +56,11 @@
         let num1 = parseFloat(document.getElementById("num1").value);
         let num2 = parseFloat(document.getElementById("num2").value);
 
-        let sum = num1 + num2;
-        document.getElementById("total").value = sum;
+          let sum = num1 + num2;
+          document.getElementById("total").value = sum;
+        } else {
+          alert("number is not valid");
+        }
       }
     </script>
   </body>
